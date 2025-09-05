@@ -101,47 +101,96 @@
       </div>
 
       <!-- hero section -->
-      <section class="flex mx-auto max-w-[1760px]  md:gap-20 md:flex-row items-center flex-col-reverse md:px-20 p-4">
+      <section
+        class="flex mx-auto max-w-[1760px] md:gap-20 md:flex-row items-center flex-col-reverse md:px-20 p-4"
+      >
         <!-- left -->
         <div class="text-center md:text-left flex-1">
-          <h1><span class="text-5xl font-bold text-[#00BCFF]">English</span> <span class="text-5xl font-bold text-[#18181B]">is Easy!!</span></h1>
-          <p class="font-bangla text-2xl text-[#18181B]">
+          <h1>
+            <span class="text-5xl font-bold text-[#00BCFF]">English</span>
+            <span class="text-5xl font-bold text-[#18181B]">is Easy!!</span>
+          </h1>
+          <p class="font-bangla text-2xl text-[#18181B] my-2">
             আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
             আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
             অন্য একটি Level এ
           </p>
 
           <!-- form -->
-          <fieldset
-            class="fieldset md:w-1/2  p-4"
-          >
-            <input  type="text" class="input w-full" placeholder="Enter Your Name" />
-            
-            <input type="password" class="input w-full" placeholder="Password" />
-            <button class="btn btn-primary md:w-full ">Login</button>
+          <fieldset class="fieldset md:w-1/2 px-0 py-2">
+            <input
+              type="text"
+              class="input w-full"
+              placeholder="Enter Your Name"
+            />
+
+            <input
+              type="password"
+              class="input w-full"
+              placeholder="Password"
+            />
+            <button class="btn btn-primary md:w-full">Login</button>
           </fieldset>
         </div>
 
         <!-- right -->
         <div class="flex-1 flex justify-center items-center">
-          <img src="./assets/hero-student.png " alt="">
+          <img src="./assets/hero-student.png " alt="" />
         </div>
       </section>
     </header>
 
     <!-- main section -->
-     <main>
+    <main>
       <!-- Let's Learn Vocabularies section -->
-       <section>
-        <h1 class="text-center"><span class="text-4xl font-bold text-[#00BCFF]">Let's</span> <span class="text-4xl font-bold text-[#18181B]">Learn Vocabularies</span></h1>
+      <section>
+        <h1 class="text-center">
+          <span class="text-4xl font-bold text-[#00BCFF]">Let's</span>
+          <span class="text-4xl font-bold text-[#18181B]"
+            >Learn Vocabularies</span
+          >
+        </h1>
 
-        <div id="level-container" class="flex gap-5 justify-center items-center mt-5 flex-wrap">
+        <div
+          id="level-container"
+          class="flex gap-5 justify-center items-center mt-5 flex-wrap"
+        ></div>
+      </section>
 
+      <section class="mt-10 mx-auto rounded-lg bg-gray-100 max-w-[1600px] p-8">
+        <div id="word-container" class="grid md:grid-cols-3 gap-8">
+          <div class="text-center py-15 bg-white col-span-full rounded-lg">
+            <p class="text-xl font-bangla text-gray-600">
+              আপনি এখনো কোন Lesson Select করেন নি।
+            </p>
+            <h2 class="text-3xl font-bold font-bangla text-gray-800">
+              একটি Lesson Select করুন।
+            </h2>
+          </div>
         </div>
-       </section>
-     </main>
+      </section>
 
-     <!-- js file -->
-      <script src="./scripts/index.js"></script>
+      <!-- modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+      <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container" class="space-y-5">
+            
+              
+            
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </main>
+
+    <!-- js file -->
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
